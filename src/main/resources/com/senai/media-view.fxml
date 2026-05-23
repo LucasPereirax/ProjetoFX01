@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.senai.controller.MediaController">
+   <children>
+      <Label contentDisplay="CENTER" text="Média" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Nota 1">
+               <HBox.margin>
+                  <Insets left="30.0" top="35.0" />
+               </HBox.margin>
+            </Label>
+            <TextField id="nota1" fx:id="nota1" styleClass="textfield_nota1">
+               <HBox.margin>
+                  <Insets left="80.0" top="30.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Nota2">
+               <HBox.margin>
+                  <Insets left="30.0" top="35.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="nota2" styleClass="textfield_nota2">
+               <HBox.margin>
+                  <Insets left="80.0" top="30.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Button fx:id="calcular" mnemonicParsing="false" onAction="#calcular" styleClass="calcular" text="Calcular" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label contentDisplay="CENTER" style="-fx-font-size: 20;" text="Resultado:" />
+            <Label fx:id="resultado" contentDisplay="CENTER" style="-fx-font-size: 20;" styleClass="resultado">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="50.0" />
+   </padding>
+</VBox>

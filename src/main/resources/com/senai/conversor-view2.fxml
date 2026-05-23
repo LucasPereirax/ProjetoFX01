@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="362.0" prefWidth="400.0" spacing="20.0" stylesheets="@style/media.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.senai.controller.ConversorController2">
+
+   <Label styleClass="titulo" text="Conversor de Moedas" />
+
+   <HBox alignment="CENTER_LEFT">
+      <Label styleClass="tituloCampo" text="Valor:" />
+      <TextField fx:id="valorText" promptText="Digite o primeiro número" styleClass="campo" HBox.hgrow="ALWAYS" />
+   </HBox>
+   <HBox alignment="CENTER_LEFT">
+      <children>
+         <Label styleClass="tituloCampo" text="Conversão:" />
+         <ComboBox fx:id="conversaoCbox" maxWidth="10000.0" styleClass="campo" HBox.hgrow="ALWAYS" />
+      </children>
+   </HBox>
+
+   <HBox alignment="CENTER_LEFT">
+      <Label styleClass="tituloCampo" text="Resultado:" />
+      <TextField fx:id="resultadoText" editable="false" styleClass="campo" HBox.hgrow="ALWAYS" />
+   </HBox>
+
+   <Button onAction="#converter" text="Calcular" />
+
+   <Label fx:id="resultado" styleClass="resultado" />
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+
+</VBox>
